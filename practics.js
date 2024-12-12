@@ -110,3 +110,24 @@ console.log(r6)
 let p=[10,20,30,40,50,60,70]
 p.fill(10,3,6)
 console.log(p)   //! [10, 20, 30, 10, 10, 10, 70]
+
+
+
+
+let arr=["banana","Appple","orange","watermelon","mango"]
+
+let vowels="AEIOUaeiou";
+for(let i=0;i<arr.length;i++){
+    let word=arr[i]
+    let findvowels="";
+
+   for(let char of word){
+    if(vowels.includes(char)){
+        findvowels =findvowels+char;
+    }
+   }
+   console.log(`word:${word}, vowels:${findvowels}`)
+    
+}
+
+

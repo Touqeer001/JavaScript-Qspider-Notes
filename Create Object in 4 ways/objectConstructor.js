@@ -2,5 +2,5 @@
 
 
 let a= new Object()
-a.name="touqeer"
+a.name="touqeer";
 console.log(a)
