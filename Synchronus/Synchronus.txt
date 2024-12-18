@@ -1,0 +1,9 @@
+Synchronous JavaScript
+Definition: Code is executed line-by-line, one at a time, in a sequential order.
+Each line of code blocks the execution of the next line until it is completed.
+If one operation takes a long time (e.g., file read, API call), the program will wait (block) until it finishes.
+
+Key Behavior:
+Code executes top to bottom.
+Each task waits for the previous one to finish before starting.
+If a task takes time, the whole program pauses.
