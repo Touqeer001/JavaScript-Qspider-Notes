@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Welcome!</h1>
+    <button id="ChangeTitle">Change Title</button>
+
+
+    <script>
+        let button=document.getElementById("ChangeTitle")
+        button.addEventListener("click",function(){
+            let title=document.getElementById("title")
+            title.textContent="Title Changed"
+            title.style.color="red"
+        })
+        let btn=document.getElementById("ChangeTitle")
+        button.removeEventListener("click",function(){
+            let tit=document.getElementById("title")
+            title.textContent="Acutal titil"
+            title.style.color="orange"
+        })
+
+    </script>
+</body>
+</html>

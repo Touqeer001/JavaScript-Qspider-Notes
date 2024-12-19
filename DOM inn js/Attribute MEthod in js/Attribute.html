@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="myLink" href="https://example.com" title="Go to Example">Visit Example</a>
+    <script>
+        let link=document.getElementById("myLink")
+        console.log(link.getAttribute('href'))
+
+        link.setAttribute("href","https://google.com")
+ 
+        console.log(link.hasAttribute('title'))
+
+        link.removeAttribute('title')
+
+        for(let arr in link.attributes){
+            console.log(`${arr.name}=${attr.value}`);
+        }
+
+    </script> 
+    
+</body>
+</html>

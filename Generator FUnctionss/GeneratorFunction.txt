@@ -1,0 +1,20 @@
+Key Points about yield and Generators:
+
+yield: Pauses the generator and sends a value to the calling code.
+.next(): Resumes execution from the last yield and returns the next value (or ends if the function is finished).
+done: A property of the object returned by .next(). It tells if the generator has finished running.
+
+Generator Function:
+
+Executes lazily and can be paused and resumed using the yield keyword.
+Returns an iterator object instead of a value.
+
+
+Generator Function:
+
+Can pause execution at yield statements and resume later using the iterator's .next() method.
+
+
+Generator Function:
+
+Returns an iterator object which produces a sequence of values when iterated.
