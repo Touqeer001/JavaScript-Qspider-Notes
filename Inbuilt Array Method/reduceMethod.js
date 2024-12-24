@@ -1,4 +1,4 @@
-//! reduce()
+ //! reduce()
 var a=[10,20,30,40,50,60]
 
 let r5=a.reduce((acc,cv)=>

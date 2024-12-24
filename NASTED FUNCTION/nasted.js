@@ -1,6 +1,8 @@
 
 //! Nasted function
 
+console.log(this)
+
 function demo(){
 
 console.log("Demo function")
@@ -24,21 +26,23 @@ f1();
 demo();
 
 
-function f2(){
+// function f2(){
 
-let x=10;
-console.log(x)
+// let x=10;
+// console.log(x)
 
-function inner(){
+// function inner(){
 
-    console.log("nested function")
-}
-return inner;
+//     console.log("nested function")
+// }
+// return inner;
 
 
-}
+// }
 
 //f2()()    //!to acces inner function data
 //let r=f2(); //! ANother way to get data inside the function 
 
 //r();
+
+

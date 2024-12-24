@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">Clicked me</button>
+    </div>
+    s<script>
+        document.getElementById("parent").addEventListener('click',()=>{
+            console.log("parent Click");
+        },true)
+        document.getElementById('child').addEventListener('click', (event) => {
+  console.log('Child clicked');
+  event.stopPropagation(); // Prevents the event from reaching the parent
+},false);
+    </script>
+</body>
+</html> 

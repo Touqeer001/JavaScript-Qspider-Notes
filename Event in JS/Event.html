@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+        <button id="myButton">
+            gogole
+    
+        </button>
+
+    </div>
+
+    </div>
+    <form id="form">
+        <input type="text" name="username">name
+        <input type="text" password="password">ID
+    <button>submit</button>
+
+        
+    </form>
+    <input type="text" id="input">
+    <script>
+        let form=document.querySelector("form")
+
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault()
+
+            let data=new FormData(form)
+            let finalData=Object.fromEntries(data)
+            console.log(finalData)
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let div=document.getElementById("container")
+//  div.onclick=function(){
+//     console.log("Hello SHeela")
+//     div.style.background="hotpink"
+//  }
+
+let div2=document.getElementById("myButton")
+let div3=document.getElementById("myButton")
+
+//  div2.addEventListener("mouseover",(e)=>{
+//     // div.style.background="yellow"
+//     console.log(e)
+//     e.target.style.background="green"
+//  })
+
+//  div2.addEventListener('mouseout',(e)=>{
+//     console.log(e)
+//     e.target.style.background="red"
+//  })
+
+let input=document.querySelector("#input")
+
+// input.onkeyup=(e)=>{
+//     console.log(e)
+
+// }
+
+// input.onkeypress=(e)=>{
+// console.log(e)
+// }
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

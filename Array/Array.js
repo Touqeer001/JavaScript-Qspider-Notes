@@ -10,7 +10,7 @@ console.log(typeof fruite)
 
 
 //! cheack the datatype of array and obj [array.isArray]
-console.log(Array.isArray(100))  //! false
+console.log(Array.isArray())  //! false
 console.log(Array.isArray(fruite)) //! true
 
 
